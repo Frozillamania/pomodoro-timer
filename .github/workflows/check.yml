@@ -1,0 +1,11 @@
+name: Check
+on: [push, pull_request]
+jobs:
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift test
+      - run: scripts/build-app.sh
+      - name: Timer-only native smoke typecheck
+        run: swiftc -parse-as-library -typecheck scripts/native-smoke.swift

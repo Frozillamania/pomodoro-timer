@@ -1,0 +1,2 @@
+# Local state
+No backend. state.json: version=1; focusMinutes 1…180; breakMinutes 1…60; timer {phase Focus/Break, remaining finite nonnegative bounded by phase duration, deadline optional Date}; timerSoundEnabled and timerBlinkEnabled booleans default false; alwaysOnTop boolean. Reject unknown versions and invalid timers. Missing file gets defaults; malformed existing data is preserved and edits disabled. On restart an expired deadline transitions silently to the next paused phase, preventing repeated completion alerts.
