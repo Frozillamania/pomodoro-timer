@@ -1,0 +1,5 @@
+.build/
+artifacts/
+.runtime/
+.DS_Store
+*.xcresult
