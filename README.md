@@ -22,9 +22,11 @@ Closing the window leaves the timer in the menu bar. Quit from its menu. A finis
 
 Settings and the timer are saved in `~/Library/Application Support/POMODORO Timer/state.json`. A running countdown uses its deadline across relaunch and sleep. The app must be running and the Mac awake for an immediate completion cue. An expired timer found on launch advances silently to the next phase. Invalid state files are preserved and changes disabled.
 
-The app icon is drawn with AppKit; regenerate it using `swift scripts/render-icons.swift`. The menu bar uses a monochrome version. No generated illustrations, analytics or external services.
+The app icon is drawn with AppKit; regenerate it using `swift scripts/render-icons.swift`. The menu bar uses a monochrome version. No analytics or external services.
 
-This is an unsigned development build. Distribution signing and notarization are not included. No license has been selected yet; public publication and reuse terms remain the owner's decision.
+Source: [github.com/Frozillamania/pomodoro-timer](https://github.com/Frozillamania/pomodoro-timer). Project page: [systemerror.app/products/pomodoro](https://systemerror.app/products/pomodoro/).
+
+Build it locally using the commands above. Prebuilt signed/notarized downloads are not provided. No reuse license has been selected.
 
 Native smoke (requires already-granted Accessibility and screen capture access): `./scripts/native-smoke.sh`. It uses a separate app identity and temporary state; it never opens your daily timer data.
 
