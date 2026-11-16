@@ -1,0 +1,2 @@
+# Visual direction
+Reuse the existing graphite timer icon, red duration sector, neutral smoky near-transparent glass and transparent capsule/silhouette controls. One compact 230-point-wide window; 180-point dial; no task cards, headings, badges, statistics or helper status text. Keep system accessible labels, reduced-motion steady cue and reduced-transparency opaque fallback. Native traffic lights and upper-frame drag remain usable. Inspect actual native pixels and dial interaction; do not infer behavior from source.
